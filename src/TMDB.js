@@ -76,4 +76,6 @@ const TMDB = {
   ]
 }
 
+
+// {TMDB.films[0].title} -> We can select titles like this and we should map them as a list.
 export default TMDB;
