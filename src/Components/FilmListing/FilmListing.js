@@ -7,13 +7,28 @@ class FilmListing extends React.Component {
   constructor(props) {
     super(props);
   }
+
+  getyear (release_date) {
+    return release_date.getFullYear()
+  }
+
 render() {
     return(
       <div className="film-list">
           <h1 className="section-title">FILMS</h1>
           <p> <FilmDetails/> </p>
           <p> {TMDB.films.map((film , index)=> {
-            return <p> {film.title} </p>
+            return (
+          <div>
+            <h2>
+              {film.release_date}
+            </h2>
+            <p>
+              {film.title} <br/>
+              {film.id}
+            </p>
+          </div>
+           )
           })
           } </p>
       </div>

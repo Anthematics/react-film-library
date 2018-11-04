@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { TMDB } from '../../TMDB.js'
-
+import FilmPoster from './../FilmPoster/FilmPoster.js'
 class FilmDetails extends React.Component {
   constructor(props) {
     super(props);
@@ -11,6 +11,7 @@ class FilmDetails extends React.Component {
     return(
       <div className="film-details">
         <h1 className="section-title"> Film Details</h1>
+        <FilmPoster/>
       </div>
     )
   }
